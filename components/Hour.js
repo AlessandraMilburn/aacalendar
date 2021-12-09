@@ -24,3 +24,6 @@ export default function Hour({ hour }) {
     </>
   )
 }
+
+//Note to Ana - how can we only show one cell time instead of the full day time?
+//I'll explore in the next few days
