@@ -44,5 +44,16 @@
 }
 
 .hourColumn {
-  border-left: 1px solid lightgrey;;
+  border-left: 1px solid lightgrey;
+}
+
+.hoursTitle {
+  border-bottom: 1px solid lightgrey;
+  height: 30px;
+  font-size: 8px;
+  color: grey;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
