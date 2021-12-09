@@ -38,6 +38,11 @@
   align-items: center;
   justify-content: center;
   height: 50px;
-  background-color: grey;
-  color: white;
+  color: grey;
+  border-bottom: 1px solid lightgrey;
+  border-top: 1px solid lightgrey;
+}
+
+.hourColumn {
+  border-left: 1px solid lightgrey;;
 }
