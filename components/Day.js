@@ -1,8 +1,7 @@
-import { hours } from "../utils/calendar.utils";
 import styles from '../styles/Calendar.module.css';
 import { useEffect, useState } from "react";
 import styled from "styled-components";
-
+import Hour from "./Hour";
 const ActiveDay = styled.div`
   background-color: ${(props) => props.isActiveDay ? 'lightpink' : 'white'};
 `;
@@ -15,23 +14,20 @@ export default function Day({ day }) {
 
   useEffect(() => {
     console.log(isActiveDay);
-  }, [selectedDay]); //<- dependency array
+  }, [isActiveDay, selectedDay]); //<- dependency array, JS asking for isActiveDay to be added
 
   return (
     //template
     <div className={styles.day}>
-      <ActiveDay isActiveDay={isActiveDay} >
+      <ActiveDay isActiveDay={isActiveDay}>
         <div
           className={styles.weekdayTitle}
           onClick={() => setSelectedDay(day)}
         >
           {day}
+          {/* {new Date().getDate()} */}
         </div>
-        <div>{hours.map(() => (
-          <div key={Math.random()} className={styles.hours}>
-            <div></div>
-          </div>
-        ))}</div>
+        <Hour />
       </ActiveDay>
     </div >
     // <div key={id}> {weekday} </div>
