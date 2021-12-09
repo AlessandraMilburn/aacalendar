@@ -6,10 +6,10 @@ export default function WeeklyCalendar() {
   return (
     <>
       <div className={styles.week}>
-        <div>
+        <div className={styles.hourColumn}>
           <div className={styles.weekdayTitle}></div>
           {hours.map((hour, id) => (
-            <div key={id} className={styles.hours}>
+            <div key={id} className={styles.hoursTitle}>
               <div>{hour}</div>
             </div>
           ))}
