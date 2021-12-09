@@ -1,6 +1,5 @@
 import styles from '../styles/Calendar.module.css';
 import { months } from "../utils/calendar.utils"
-
 const today = new Date();
 const firstDayOfYear = new Date(today.getFullYear(), 0, 1);
 const pastDaysOfYear = (today - firstDayOfYear) / 86400000;
